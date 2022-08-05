@@ -28,7 +28,7 @@ espace = " "
 carac_sub = list(ascii_lowercase+espace)
 len_carac_sub = len(carac_sub)
 
-name = "configs/emoji.res"
+name = "configs/emoji.bin"
 
 groupe_caracteres_initial = "".join(open(name,'r',encoding='utf-8').readlines())
 
@@ -40,15 +40,15 @@ groupe_b = groupe_caracteres_initial[milieu:]
 
 carac_special = 'esywqdntzcapv'+espace
 
-# Cette ligne est purement ethétique
-groupe_b = groupe_b+''.join(carac_sub)*50+carac_special*50
+# Cette ligne est purement esthétique
+#groupe_b = groupe_b+''.join(carac_sub)*50+carac_special*50
 
-len_caractere = (6,7)
+len_caractere = (5,7)
 longeur_carac_special = (3,4)
 
 nombre_cle = (10,30)
 
-mini,maxi = 100,300
+mini,maxi = 200,400
 
 
 
