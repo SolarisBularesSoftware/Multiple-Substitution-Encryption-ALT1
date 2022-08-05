@@ -12,7 +12,7 @@
 # MSE PROJECT
 -------------------------------------
 
-# ENCRYPTION BY MUTILPLE SUBSTITUTION
+# MULTIPLE SUBSTITUTION ENCRYPTION
 -------------------------------------
 ![cover](exemple/cover.jpg)
 
@@ -23,16 +23,26 @@ projet sur un programme de chiffrement par substitution multiple,
 pour but de créer des messages codés avec des phrases courtes.
 
 
-**Normalement il faut avoir les clés de chiffrement pour pouvoir déchiffrer les messages de quelqu'un d'autre, normalement ! (Tentez de [casser les messages sans le programme](https://discord.gg/E6qJmmKaEW))**
+# Comment sa fonction ?
 
-**Attention si vous perdez vos clés, tous les messages que vous avez chiffrées précédemment seront plus possible à déchiffrer (comme si vous perdez vous bitcoin à jamais !**
+# I) chiffrement en 3 étapes:
 
+    INPUT --> A --> B --> C --> output
+    
+--------------------------------------------------------------------------
+    I) Bloc A
+        Le texte est légèrement modifié.
+--------------------------------------------------------------------------
+    II) Bloc B
+        Chaque caractère est substitué.
+--------------------------------------------------------------------------
+    II) Bloc C
+        Ajoute des caractères dans le code après la substitution.
 
-Tous est facilement paramétrable dans le fichier **parametre.py**
+# parametres
 
-Nom de version: **CRC VIII BETA**
+**carac_sub** sont les caractères que vous voulez substitués
 
----------------------------------------
 
 # REQUIS
 -------------------------------------
@@ -46,22 +56,6 @@ Pour copier le message automatiquement vous devez installez le module [pyperclip
 
 	
 -------------------------------------
-
-**le fichier keylib.keys sont vous clés de chiffrement, gardez les secret à tous prix !**
-Elle est générer lorsque vous chiffrer votre premier message
-
--------------------------------------
-
-    INPUT --> A --> B --> C --> output
---------------------------------------------------------------------------
-    I) Bloc A
-        Le texte est légèrement modifié.
---------------------------------------------------------------------------
-    II) Bloc B
-        Chaque caractère est substitué.
---------------------------------------------------------------------------
-    II) Bloc C
-        Ajoute des caractères dans le code après la substitution.
 
 
 # Usage
@@ -87,48 +81,6 @@ Elle est générer lorsque vous chiffrer votre premier message
 	4) Mélanger vos caractères spéciaux (a le faire tous de suite !)
 		---------------------->
 		MSE.py M
-	
 
-# Exemples:
----------------------------
-	$ python MSE.py c "meeting tonight for speak"
-	
-	> 쓗턞🃅὎꾋⦏넲糀뀅獀㬶㜹킹껥⩞刍鲵鴇ꁺ樈蓅𒉗ﳀ𝌐㏘⠹楨ꎷ䤁ዚ㬙譆귘鷛堘籉뫴됺𒀀뀤넵⤯頨ꍪ扰𓋊Ჷ휏鹃𓃖農挘ᎇچめⶴ 㥅셋וֹ꿮뛋巭
-	
-	$ python MSE.py d
-	
-	> meeting tonight for speak
-
-
-# Remarque:
-Vous devez copier le message secret avant de le déchiffrer
-
-# Astuces
----------------------------
-
-**Attention vous devez mélanger vos caractères spéciaux (grâce à la commande: python MSE.py M), il ne doit en aucun cas ressembler à celui du code source. Prenez le code source et modifier le, créer une version personnalisée du projet, plus il ne ressemblera pas au code source originale, plus il a de chance qu'il soit difficile à casser, faite votre propre version du projet, généré votre clé de chiffrement, modifier les paramètres, envoyer le projet entier (pas seulement vos clés) à votre correspondant.**
-
-
-Modifier la longueur des caractères.
-**optez plûtot pour un language de type "sms" du genre: tu fait quoi  ---> tfk**
-modifier la liste des "caractères spéciaux"
-
-Cette méthode de chiffrement reste vulnérable
-aux attaques, ne chiffrer pas vos données personel avec cette méthode !
-Aidez moi plûtot a tentez de le casser.
-
------------------------------------
-le monde merveilleux des secrets, des lettres et des
-chiffres !
----------------------------------------
 
 Tantez de casser l'algorithme avec le programme: [MARS ATTACK](https://discord.gg/E6qJmmKaEW)
-
-[Serveur Discord officiel ](https://discord.gg/YQCufGwwwt)
-
-![demo picture ](exemple/cap_ex.png)
-
-
-
-
-
