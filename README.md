@@ -50,11 +50,6 @@ Pour copier le message automatiquement vous devez installez le module [pyperclip
 
 	> pip install pyperclip
 	
-[pyAesCrypt](https://pypi.org/project/pyAesCrypt/) pour chiffrer et envoyer vos clés de chiffrement
-
-	> pip install pyAesCrypt
-
-	
 -------------------------------------
 
 
