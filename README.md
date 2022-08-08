@@ -23,7 +23,7 @@ projet sur un programme de chiffrement par substitution multiple,
 pour but de créer des messages codés avec des phrases courtes.
 
 
-# Comment sa fonction ?
+# Comment sa fonctionne ?
 
 # I) chiffrement en 3 étapes:
 
