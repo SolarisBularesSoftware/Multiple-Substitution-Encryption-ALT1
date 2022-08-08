@@ -28,7 +28,7 @@ espace = " "
 carac_sub = list(ascii_lowercase+espace)
 len_carac_sub = len(carac_sub)
 
-name = "configs/emoji.bin"
+name = "configs/rand_carac.bin"
 
 groupe_caracteres_initial = "".join(open(name,'r',encoding='utf-8').readlines())
 
@@ -38,10 +38,10 @@ groupe_a = groupe_caracteres_initial[:milieu]
 groupe_b = groupe_caracteres_initial[milieu:]
 
 
-carac_special = 'esywqdntzcapv'+espace
+carac_special = 'esywfdntzcapv'+espace
 
 # Cette ligne est purement esthétique
-#groupe_b = groupe_b+''.join(carac_sub)*50+carac_special*50
+groupe_b = groupe_b+''.join(carac_sub)*50+carac_special*50
 
 len_caractere = (5,7)
 longeur_carac_special = (3,4)
