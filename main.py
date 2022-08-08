@@ -124,11 +124,9 @@ def main():
 	
 	elif sys.argv[1] in cryp:
 		pass
-		#encrypt_keylib()
 		
 	elif sys.argv[1] in des:
 		pass
-		#decrypt_keylib(paste())
 	
 	elif sys.argv[1] in reset:
 		reinitialiser()

@@ -33,32 +33,7 @@ def gen_mdp():
 	for c in range(randint(15,30)):
 		p = p + choice(char)
 	return p
-
-
-def encrypt_keylib():
-	"""
-	pour chiffrer vos clés de chiffrement.
-
-	"""
-	if os.path.exists("keylib.keys"):
-		password = gen_mdp()
-		print('mot de passe: ',password)
-		pyAesCrypt.encryptFile("keylib.keys", "keylib.aes", password)
-		
-	else:
-		pass
-
-
-def decrypt_keylib(password):
-	"""
-	pour déchiffrer vos clés de chiffrement.
-
-	"""
-	if os.path.exists("keylib.aes"):
-		pyAesCrypt.decryptFile("keylib.aes", "keylib.keys", password)
-	else:
-		pass
-
+	
 
 def mixer():
 	"""
@@ -81,12 +56,18 @@ def mixer():
 	f.close()
 
 
-def rebuild(c):
+def rebuild(filtre):
+	"""
+	reconstruit le fichier des caractères spéciaux
+	en supriment les doublons et aussi les caractères
+	indiqués dans filtre
+	"""
+	
 	old_carac = open(name,'r',encoding='utf-8').read()
 	new_carac = []
 	
 	for e in old_carac:
-		if e not in c and e not in new_carac:
+		if e not in filtre and e not in new_carac:
 			new_carac.append(e)
 	
 	new_carac = "".join(new_carac)
@@ -94,6 +75,5 @@ def rebuild(c):
 	open(name,'w',encoding='utf-8').write(new_carac)
 	
 	
-
 
 
