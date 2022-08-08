@@ -28,7 +28,7 @@ espace = " "
 carac_sub = list(ascii_lowercase+espace)
 len_carac_sub = len(carac_sub)
 
-name = "configs/rand_carac.bin"
+name = "configs/emoji.bin"
 
 groupe_caracteres_initial = "".join(open(name,'r',encoding='utf-8').readlines())
 
