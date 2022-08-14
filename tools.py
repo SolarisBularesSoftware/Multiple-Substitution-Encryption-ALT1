@@ -6,7 +6,7 @@ from random import shuffle,choice,randint
 import shutil
 from string import ascii_letters,digits,punctuation
 import pyAesCrypt
-from configs.parametre import name
+from configs.parametre import name,carac_sub
 
 def reinitialiser():
 	"""
@@ -14,17 +14,14 @@ def reinitialiser():
 	et le dossier __pycache__
 	"""
 	
-	print('Vos clés de chiffrement vont être supprimés !')
-	user = input('Etes-vous sur ? ')
+	reponse = input('Etes-vous sur ? ')
 		
-	if user in ['y','yes','oui','o','da','Y','1']:
+	if reponse in ['y','yes','oui','o','da','Y','1','True','true']:
 	
 		if os.path.exists("keylib.keys"):
 			os.remove("keylib.keys")
 		shutil.rmtree('__pycache__')
 		shutil.rmtree('configs/__pycache__')
-		
-		print('[ les clés de chiffrement ont été supprimés ]')
 
 
 def gen_mdp():
@@ -56,24 +53,27 @@ def mixer():
 	f.close()
 
 
-def rebuild(filtre,name):
+def rebuild():
 	"""
 	reconstruit le fichier des caractères spéciaux
 	en supriment les doublons et aussi les caractères
 	indiqués dans filtre
 	"""
+	reinitialiser()
 	
 	old_carac = open(name,'r',encoding='utf-8').read()
 	new_carac = []
 	
 	for e in old_carac:
-		if e not in filtre and e not in new_carac:
+		if e not in carac_sub and e not in new_carac:
 			if e != "\n":
-				print('!')
 				new_carac.append(e)
 	
 	new_carac = "".join(new_carac)
 	
 	open(name,'w',encoding='utf-8').write(new_carac)
 	
+
+
+
 

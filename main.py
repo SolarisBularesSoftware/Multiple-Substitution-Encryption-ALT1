@@ -103,10 +103,10 @@ def main():
 	
 	mxr = ['M','m','mixer','mix','mxr']
 	reset = ['r','R','reset','delete','del']
-	rebuild = ['re','RE','reb','rebuild','del']
+	rebld = ['re','RE','reb','rebuild']
 	h = ['H','h','Help me','aide moi','A','a']
 	
-	_all_ = cip+dec+cryp+des+reset+mxr+h
+	_all_ = cip+dec+cryp+des+reset+mxr+h+rebld
 	
 	if sys.argv[1] not in _all_:
 		if sys.argv[1] == "demo":
@@ -132,12 +132,13 @@ def main():
 	elif sys.argv[1] in mxr:
 		mixer()
 		
-	elif sys.argv[1] in rebuild:
-		rebuild(sys.argv[2])
+	elif sys.argv[1] in rebld:
+		rebuild()
 	
 	elif sys.argv[1] in h:
 		print(__doc__)
 
 
 main()
+
 
