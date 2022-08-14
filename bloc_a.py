@@ -1,7 +1,7 @@
 """
     I) Bloc A
         Serie d'opération sur une chaine de caractère
-        servant à modifier légèrement le text entré
+        servant à modifier le text entré
 """
 
 from subdiv_mini import inverser_phrase,remettre_phrase
@@ -25,6 +25,5 @@ def decomplex(coded_text):
     coded_text = remettre_phrase(coded_text)
     coded_text =  coded_text[::-1]
     return coded_text
-
 
 

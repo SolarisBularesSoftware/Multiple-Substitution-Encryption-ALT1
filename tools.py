@@ -56,7 +56,7 @@ def mixer():
 	f.close()
 
 
-def rebuild(filtre):
+def rebuild(filtre,name):
 	"""
 	reconstruit le fichier des caractères spéciaux
 	en supriment les doublons et aussi les caractères
@@ -68,12 +68,12 @@ def rebuild(filtre):
 	
 	for e in old_carac:
 		if e not in filtre and e not in new_carac:
-			new_carac.append(e)
+			if e != "\n":
+				print('!')
+				new_carac.append(e)
 	
 	new_carac = "".join(new_carac)
 	
 	open(name,'w',encoding='utf-8').write(new_carac)
 	
-	
-
 

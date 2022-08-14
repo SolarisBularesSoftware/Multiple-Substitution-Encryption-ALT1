@@ -1,11 +1,6 @@
 """
     II) Bloc C
         Complexifie le code après la subtitution.
-    
-    m = chaos('hello world',10)
-	print(m)
-	> h녓♲ell臥o w腢o⪙rﲸld킙碹蘛᪙
-
 """
 
 from configs.parametre import*
@@ -39,7 +34,6 @@ def dechaos(code):
         if element not in groupe_b:
             new_text = new_text + element  
     return new_text
-
 
 
 

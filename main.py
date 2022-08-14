@@ -15,8 +15,6 @@
 	Créer le mardi 22 janvier 2019 à 01:10 
 
 	@author: Motion Kerling
-
-	version name: CRC VIII
 	
 """
 

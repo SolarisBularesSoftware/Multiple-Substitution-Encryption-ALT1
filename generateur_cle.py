@@ -57,8 +57,3 @@ def gen_lib_cle(nombre_cle):
         file.write(f'{gen_cle(len_carac_sub)}\n')
 
     file.close()
-
-
-
-
-
