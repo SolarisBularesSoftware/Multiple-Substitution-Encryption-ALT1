@@ -31,15 +31,15 @@ pour but de créer des messages codés avec des phrases courtes.
     INPUT --> A --> B --> C --> output
     
     
-	0) Initiation
-		génération des clés de chiffrement
+    0) Initiation
+        génération des clés de chiffrement
 --------------------------------------------------------------------------
 	
     I) Bloc A
         Le texte est modifié.
 --------------------------------------------------------------------------
     II) Bloc B
-    	Une clé est choisie au hasard.
+        Une clé est choisie au hasard.
         Chaque caractère est substitué avec cette clé.
 --------------------------------------------------------------------------
     II) Bloc C
