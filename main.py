@@ -44,10 +44,9 @@ Uasage:
 		
 """
 
-from pyperclip import paste
-from pyperclip import copy as copier_text
 from random import choice,randint
 import sys
+from pyperclip import copy,paste
 
 from configs.parametre import*
 
@@ -79,7 +78,7 @@ def mse_cipher(msg):
 	b = cipher(a)
 	c = chaos(b,randint(mini,maxi))
 	
-	copier_text(c)
+	copy(c)
 	return c
 
 

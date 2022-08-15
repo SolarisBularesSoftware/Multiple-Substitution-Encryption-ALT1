@@ -14,8 +14,6 @@
 
 ## MULTIPLE SUBSTITUTION ENCRYPTION
 -------------------------------------
-![cover](exemple/cover.jpg)
-
 
 Chiffrement par substitution multiple
 
@@ -46,12 +44,16 @@ pour but de créer des messages codés avec des phrases courtes.
         Ajoute des caractères dans le code après la substitution.
 
 
+## Exemple
+![Exemple](exemple/cover.jpg)
+En bleu vous avez les caractères qui ont été substitués et en rouge les caractères qui ont été ajoutés après la substitution.
+
 
 ## REQUIS
 -------------------------------------
 Pour copier le message automatiquement vous devez installez le module [pyperclip](https://pypi.org/project/pyperclip/)
 
-	> pip install pyperclip
+	pip install pyperclip
 
 
 ## Attention
@@ -105,9 +107,8 @@ ajouter, modifier des fonctions
 
 **_la version que vous avez téléchargée ne dois pas ressembler au code source officielle_**
 
------------------------------------
-le monde merveilleux des secrets, des lettres et des
-chiffres !
+
+###le monde merveilleux des secrets, des lettres et des chiffres !
 ---------------------------------------
 
 Tentez de casser l'algorithme avec le programme: [MARS ATTACK](https://discord.gg/E6qJmmKaEW)
