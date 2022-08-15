@@ -24,7 +24,7 @@ pour but de créer des messages codés avec des phrases courtes.
 
 **Nom de version: CRC X [ MELINGRADE ]**
 
-## Comment sa fonction ?
+## Comment sa fonctionne ?
 
 ### Chiffrement en 3 étapes:
 
