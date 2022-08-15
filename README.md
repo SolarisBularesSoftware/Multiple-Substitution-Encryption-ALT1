@@ -28,7 +28,7 @@ pour but de créer des messages codés avec des phrases courtes.
 
 ### Chiffrement en 3 étapes:
 
-    INPUT --> A --> B --> C --> output
+### INPUT --> A --> B --> C --> output
     
     
     0) Initiation
@@ -51,7 +51,7 @@ pour but de créer des messages codés avec des phrases courtes.
 -------------------------------------
 Pour copier le message automatiquement vous devez installez le module [pyperclip](https://pypi.org/project/pyperclip/)
 
-	_> pip install pyperclip_
+	> pip install pyperclip
 
 
 ## Attention
