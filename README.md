@@ -45,7 +45,7 @@ pour but de créer des messages codés avec des phrases courtes.
 
 
 ## Exemple
-![Exemple](exemple/cover.jpg)
+![Exemple](exemple/exemple.jpg)
 En bleu vous avez les caractères qui ont été substitués et en rouge les caractères qui ont été ajoutés après la substitution.
 
 
