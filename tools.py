@@ -7,6 +7,7 @@ import shutil
 from string import ascii_letters,digits,punctuation
 import pyAesCrypt
 from configs.parametre import name,carac_sub
+from configs.gen_rand_setting import gen_random_setting
 
 def reinitialiser():
 	"""
@@ -57,7 +58,7 @@ def rebuild():
 	"""
 	reconstruit le fichier des caractères spéciaux
 	en supriment les doublons et aussi les caractères
-	indiqués dans filtre
+	indiqués dans carac_sub
 	"""
 	reinitialiser()
 	
@@ -74,6 +75,10 @@ def rebuild():
 	open(name,'w',encoding='utf-8').write(new_carac)
 	
 
-
+def gen_para_aleatoire():
+	"""
+	"""
+	reinitialiser()
+	gen_random_setting()
 
 

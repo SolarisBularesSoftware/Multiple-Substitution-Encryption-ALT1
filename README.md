@@ -62,25 +62,33 @@ Pour copier le message automatiquement vous devez installez le module [pyperclip
 
 ## Usage
 ---------------------------
+Uasage:
 	
-	1) Chiffrer / Déchiffrer message
+	1) Chiffrer et déchiffrer un message
 		-------------------------------------------->
-		MSE.py c "message"
-		MSE.py d
+		main.py c "message"
+		main.py d (déchiffre un message qui est dans le presse papier)
 
-
-	2) Supprimer vos clés
+	2) Supprimer les clés
 		---------------------->
-		MSE.py R
+		main.py R
 		
-		
-	3) Mélanger vos caractères spéciaux
+	3) Mélanger les caractères spéciaux
 		---------------------->
-		MSE.py M
+		main.py M
+	
+	4) Reconstruit le fichier de caractères spéciaux actuelle
+		---------------------->
+		main.py RE
+	
+	5) Paramètres aléatoires
+		---------------------->
+		main.py PA
 
 
 ## Astuces
 -------------------------------------------------------------------
+utilisez la commande **_main.py PA_** pour générer des paramètre aléatoire
 modifier,mélanger vos caractères spéciaux
 modifier les paramètres
 Modifier la longueur des caractères.
