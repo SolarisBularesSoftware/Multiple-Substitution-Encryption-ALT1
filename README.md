@@ -89,12 +89,19 @@ Uasage:
 ## Astuces
 -------------------------------------------------------------------
 utilisez la commande **_main.py PA_** pour générer des paramètre aléatoire
+
 modifier,mélanger vos caractères spéciaux
+
 modifier les paramètres
+
 Modifier la longueur des caractères.
+
 optez plûtot pour un language de type "sms" du genre: tu fait quoi  ---> tfk
+
 modifier la liste des "caractères spéciaux"
+
 ajouter, modifier des fonctions
+
 
 **_la version que vous avez téléchargée ne dois pas ressembler au code source officielle_**
 
