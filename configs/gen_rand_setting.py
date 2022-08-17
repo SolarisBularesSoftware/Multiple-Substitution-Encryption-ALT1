@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+
 from random import choice, randint
 from string import ascii_lowercase
 

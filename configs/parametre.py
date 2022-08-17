@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
 """
 
 I) Je choisit un groupe de caractère que je veut substituer
@@ -47,3 +48,7 @@ longeur_carac_special = (2,4)
 nombre_cle = (10,30)
 
 mini,maxi = 100,300
+
+
+
+
