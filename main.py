@@ -14,7 +14,7 @@
 
 	Créer le mardi 22 janvier 2019 à 01:10 
 
-	@author: Motion Kerling
+	@author: Motion Kerling (https://twitter.com/motionkerling)
 	
 """
 
@@ -135,4 +135,5 @@ def main():
 
 
 main()
+
 

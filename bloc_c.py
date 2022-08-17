@@ -1,39 +1,44 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+
 """
-    II) Bloc C
-        Complexifie le code après la subtitution.
+	II) Bloc C
+		Complexifie le code après la subtitution.
 """
+
 
 from configs.parametre import*
 from random import choice,randint
 
 
 def chaos(plain_text,x):
-    """
-        Ajoute de manière aléatoire un caractère du groupe_b
-        dans le code dans une position au hazard x fois.
-    """
-    plain_text = list(plain_text)
-    
-    for _ in range(x):
-        get_rand_carac = choice(groupe_b)
-        position = randint(0,len(plain_text))
-        
-        plain_text.insert(position, get_rand_carac)
+	"""
+		Ajoute de manière aléatoire un caractère du groupe_b
+		dans le code dans une position au hazard x fois.
+	"""
+	plain_text = list(plain_text)
+	
+	for _ in range(x):
+		get_rand_carac = choice(groupe_b)
+		position = randint(0,len(plain_text))
+		
+		plain_text.insert(position, get_rand_carac)
 
-    plain_text = ''.join(plain_text)
-    return plain_text
+	plain_text = ''.join(plain_text)
+	return plain_text
 
 
 def dechaos(code):
-    """
-    Enlève les carcatères du groupe b
-    """
-    
-    new_text = ""
-    for element in code:
-        if element not in groupe_b:
-            new_text = new_text + element  
-    return new_text
+	"""
+	Enlève les carcatères du groupe b
+	"""
+	
+	new_text = ""
+	for element in code:
+		if element not in groupe_b:
+			new_text = new_text + element  
+	return new_text
 
 
 

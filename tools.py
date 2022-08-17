@@ -5,7 +5,6 @@ import os
 from random import shuffle,choice,randint
 import shutil
 from string import ascii_letters,digits,punctuation
-import pyAesCrypt
 from configs.parametre import name,carac_sub
 from configs.gen_rand_setting import gen_random_setting
 

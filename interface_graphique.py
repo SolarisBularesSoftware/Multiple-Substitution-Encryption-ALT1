@@ -5,6 +5,7 @@
 user interface
 	
 """
+
 from random import choice,randint
 from pyperclip import copy,paste
 
@@ -19,7 +20,7 @@ from bloc_c import chaos,dechaos
 from tkinter import*
 
 def get_user_entry():
-    return entree.get("1.0",'end-1c')
+	return entree.get("1.0",'end-1c')
 
 def mse_cipher():
 	"""
@@ -76,4 +77,3 @@ dec_btn.pack(side='left',padx=20,pady=20)
 
 
 app.mainloop()
-
