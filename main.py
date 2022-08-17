@@ -93,11 +93,37 @@ def mse_decipher(msg):
 	return a
 
 
+
+def mse_cipher_file(filename,list):
+
+	file = open(filename,'w',encoding="utf-8")
+
+	for e in list:
+		file.write(mse_cipher(e))
+		file.write('\n\n')
+
+	file.close()
+
+
+def mse_decipher_file(filename):
+
+	file = open(filename,'r',encoding="utf-8").read()
+
+	file = file.split('\n\n')
+
+	for line in file:
+		print(mse_decipher(line))
+
+
+"""
+mse_cipher_file('test.txt',example_phrases)
+mse_decipher_file('test.txt')
+"""
+
 def main():
 
 	cip = ['cipher','c','C','cip']
 	dec = ['decipher','d','D','dec']
-	
 	mxr = ['M','m','mixer','mix','mxr']
 	reset = ['r','R','reset','delete','del']
 	rebld = ['re','RE','reb','rebuild']
@@ -135,5 +161,6 @@ def main():
 
 
 main()
+
 
 
