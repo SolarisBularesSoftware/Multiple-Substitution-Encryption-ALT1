@@ -27,7 +27,7 @@ import os
 carac_sub = list(ascii_lowercase+' ')
 len_carac_sub = len(carac_sub)
 
-name = "all.carac"
+name = "config/all.carac"
 
 groupe_caracteres_initial = "".join(open(name,'r',encoding='utf-8').readlines())
 
