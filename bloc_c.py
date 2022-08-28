@@ -8,7 +8,7 @@
 """
 
 
-from configs.parametre import*
+from configs.init import*
 from random import choice,randint
 
 

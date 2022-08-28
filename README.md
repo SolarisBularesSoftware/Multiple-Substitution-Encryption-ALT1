@@ -17,8 +17,9 @@
 
 Chiffrement par substitution multiple
 
-Projet sur un programme de chiffrement par substitution multiple,
-pour but de créer des messages codés avec des phrases courtes.
+Programme de chiffrement de text par substitution multiple,
+pour but de créer des messages codés avec des phrases.
+
 
 **Nom de version: CRC X [ MELINGRADE ]**
 
@@ -46,7 +47,7 @@ pour but de créer des messages codés avec des phrases courtes.
 
 ## Exemple
 ![Exemple](exemple/exemple.jpg)
-En bleu vous avez les caractères qui ont été substitués et en rouge les caractères qui ont été ajoutés après la substitution.
+En bleu vous avez les caractères qui ont été substitués et en rouge les caractères qui ont été ajoutés **après** la substitution.
 
 
 ## REQUIS
@@ -58,13 +59,11 @@ Pour copier le message automatiquement vous devez installez le module [pyperclip
 
 ## Attention
 -----------------------------------
-**Ouvrir un fichier qui a pour extension _.carac_ peut entrainer un bug.**
 **Lorsque vous chiffrer votre premier message un fichier _keylib.keys_ va être généré ce sont vous clés de chiffrement gardez les à tous prix !**
-
 
 ## Usage
 ---------------------------
-Uasage:
+Usage:
 	
 	1) Chiffrer et déchiffrer un message
 		-------------------------------------------->
@@ -82,21 +81,13 @@ Uasage:
 	4) Reconstruit le fichier de caractères spéciaux actuelle
 		---------------------->
 		main.py RE
-	
-	5) Paramètres aléatoires
-		---------------------->
-		main.py PA
 
 
 ## Astuces
 -------------------------------------------------------------------
-utilisez la commande **_main.py PA_** pour générer des paramètre aléatoire
-
 modifier,mélanger vos caractères spéciaux
 
-modifier les paramètres
-
-Modifier la longueur des caractères.
+modifier les paramètres du programme dans configs/setting.json
 
 optez plûtot pour un language de type "sms" du genre: tu fait quoi  ---> tfk
 
@@ -108,8 +99,7 @@ ajouter, modifier des fonctions
 **_la version que vous avez téléchargée ne dois pas ressembler au code source officielle_**
 
 
-###le monde merveilleux des secrets, des lettres et des chiffres !
----------------------------------------
+# le monde merveilleux des secrets, des lettres et des chiffres !
 
 Tentez de casser l'algorithme avec le programme: [MARS ATTACK](https://discord.gg/E6qJmmKaEW)
 

@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
 """
 	I) Bloc A
 		Serie d'opération sur une chaine de caractère
@@ -29,6 +28,7 @@ def decomplex(coded_text):
 	coded_text = remettre_phrase(coded_text)
 	coded_text =  coded_text[::-1]
 	return coded_text
+
 
 
 

@@ -7,7 +7,7 @@
 		Chaque carcatère est substituer.
 """
 
-from configs.parametre import*
+from configs.init import*
 from random import choice,randint
 import os
 
@@ -80,4 +80,5 @@ def decipher(coded_msg):
 			coded_msg = coded_msg.replace(key[n],carac_sub[n])
 	
 	return coded_msg
+
 

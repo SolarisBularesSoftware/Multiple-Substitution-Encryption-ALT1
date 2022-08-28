@@ -1,64 +1,10 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-"""
-
-	███╗   ███╗  ██████╗ ███████╗
-	████╗ ████║ ██╔════╝ ██╔════╝
-	██╔████╔██║ ╚█████╗  █████╗
-	██║╚██╔╝██║  ╚═══██╗ ██╔══╝
-	██║ ╚═╝ ██║ ██████╔╝ ███████╗
-	╚═╝     ╚═╝ ╚═════╝  ╚══════╝
-	
-	MSE (multiple substitution encryption)
-
-	Créer le mardi 22 janvier 2019 à 01:10 
-
-	@author: Motion Kerling (https://twitter.com/motionkerling)
-	
-"""
-
-__doc__ = """
-Uasage:
-	
-	1) Chiffrer et déchiffrer un message
-		-------------------------------------------->
-		main.py c "message"
-		main.py d (déchiffre un message qui est dans le presse papier)
-
-	2) Supprimer les clés
-		---------------------->
-		main.py R
-		
-	3) Mélanger les caractères spéciaux
-		---------------------->
-		main.py M
-	
-	4) Reconstruit le fichier de caractères spéciaux actuelle
-		---------------------->
-		main.py RE
-	
-	5) Paramètres aléatoires
-		---------------------->
-		main.py PA
-		
-"""
-
-from random import choice,randint
-import sys
-from pyperclip import copy,paste
-
-from configs.parametre import*
-
-from bloc_a import complexi,decomplex
-from bloc_b import cipher,decipher
-from bloc_c import chaos,dechaos
-
-from tools import rebuild,reinitialiser,mixer,gen_para_aleatoire
-
+from tools import rebuild,reinitialiser,mixer
+from random import choice
+from MSE import mse_cipher,mse_decipher,__doc__
+#import sys
+from pyperclip import paste
 
 example_phrases = ['ceci est une longue phrase un peut chiante','meeting tonight for speak','rendez vous ce soir pour parler','hello world','on se voit ce soir','ou habitez vous','que faites vous','a bientot','a la semaine prochaine','je peux te parler','on peut se voir','jusqu ici tout va bien','mec tfk quoi la','alors la je fait expres de mettre une tres longue phrase pour des test','hallo zusammen heute','mec tfk quoi']
-
 
 def demo():
 	print('---------- * DEMO * ----------\n')
@@ -69,69 +15,25 @@ def demo():
 	print('Texte déchiffré:\n')
 	print(mse_decipher(message))
 
-
-def mse_cipher(msg):
-	"""
-	|A| --> |B| --> |C|
-	"""
-	a  = complexi(msg)
-	b = cipher(a)
-	c = chaos(b,randint(mini,maxi))
-	
-	copy(c)
-	return c
-
-
-def mse_decipher(msg):
-	"""
-	|C| --> |B| --> |A|
-	"""
-	c = dechaos(msg)
-	b = decipher(c)
-	a = decomplex(b)
-	
-	return a
-
-
-
-def mse_cipher_file(filename,list):
-
-	file = open(filename,'w',encoding="utf-8")
-
-	for e in list:
-		file.write(mse_cipher(e))
-		file.write('\n\n')
-
-	file.close()
-
-
-def mse_decipher_file(filename):
-
-	file = open(filename,'r',encoding="utf-8").read()
-
-	file = file.split('\n\n')
-
-	for line in file:
-		print(mse_decipher(line))
-
-
 """
-mse_cipher_file('test.txt',example_phrases)
-mse_decipher_file('test.txt')
-"""
+
+NOT WORK
+----------
+provoque un bug qui va être corriger lors d'une mise
+à jour futur.
 
 def main():
 
 	cip = ['cipher','c','C','cip']
 	dec = ['decipher','d','D','dec']
+	
 	mxr = ['M','m','mixer','mix','mxr']
 	reset = ['r','R','reset','delete','del']
 	rebld = ['re','RE','reb','rebuild']
-	randset = ['pa','PA','rand_setting','rs','RS']
 	h = ['H','h','Help me','help me','aide moi','A','a']
 	
-	_all_ = cip+dec+reset+mxr+rebld+randset+h
-	
+	_all_ = cip+dec+reset+mxr+rebld+h
+
 	if sys.argv[1] not in _all_:
 		if sys.argv[1] == "demo":
 			demo()
@@ -152,15 +54,21 @@ def main():
 		
 	elif sys.argv[1] in rebld:
 		rebuild()
-		
-	elif sys.argv[1] in randset:
-		gen_para_aleatoire()
 	
 	elif sys.argv[1] in h:
 		print(__doc__)
 
+"""
 
-main()
+
+#demo()
+#reinitialiser()
+#mixer()
+#rebuild()
+#print(__doc__)
 
 
+m = mse_cipher("Salut agent 789 !")
+print(m)
+print(mse_decipher(m))
 

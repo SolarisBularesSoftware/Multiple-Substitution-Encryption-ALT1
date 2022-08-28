@@ -5,23 +5,18 @@ import os
 from random import shuffle,choice,randint
 import shutil
 from string import ascii_letters,digits,punctuation
-from configs.parametre import name,carac_sub
-from configs.gen_rand_setting import gen_random_setting
+from configs.init import name,carac_sub
 
 def reinitialiser():
 	"""
 	Suprime vos clé de chiffrement !
-	et le dossier __pycache__
 	"""
 	
-	reponse = input('Etes-vous sur ? ')
+	if os.path.exists("keylib.keys"):
+		os.remove("keylib.keys")
 		
-	if reponse in ['y','yes','oui','o','da','Y','1','True','true']:
-	
-		if os.path.exists("keylib.keys"):
-			os.remove("keylib.keys")
-		shutil.rmtree('__pycache__')
-		shutil.rmtree('configs/__pycache__')
+	shutil.rmtree('__pycache__')
+	shutil.rmtree('configs/__pycache__')
 
 
 def gen_mdp():
@@ -73,11 +68,3 @@ def rebuild():
 	
 	open(name,'w',encoding='utf-8').write(new_carac)
 	
-
-def gen_para_aleatoire():
-	"""
-	"""
-	reinitialiser()
-	gen_random_setting()
-
-
