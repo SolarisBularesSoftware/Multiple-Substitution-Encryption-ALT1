@@ -1,6 +1,6 @@
 from tools import rebuild,reinitialiser,mixer
 from random import choice
-from MSE import mse_cipher,mse_decipher,__doc__
+from MSE import mse_cipher,mse_decipher,mse_cipher_file,mse_decipher_file,__doc__
 #import sys
 from pyperclip import paste
 
@@ -67,6 +67,8 @@ def main():
 #rebuild()
 #print(__doc__)
 
+#mse_cipher_file('result.txt',example_phrases)
+#mse_decipher_file('result.txt')
 
 m = mse_cipher("Salut agent 789 !")
 print(m)
