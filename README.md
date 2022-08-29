@@ -99,7 +99,7 @@ ajouter, modifier des fonctions
 **_la version que vous avez téléchargée ne dois pas ressembler au code source officielle_**
 
 
-# le monde merveilleux des secrets, des lettres et des chiffres !
+le monde merveilleux des secrets, des lettres et des chiffres !
 
 Tentez de casser l'algorithme avec le programme: [MARS ATTACK](https://discord.gg/E6qJmmKaEW)
 
