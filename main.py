@@ -9,7 +9,7 @@ exemple_phrases = ['Salut agent 789 !','ceci est une longue phrase un peut chian
 def demo():
 	print('---------- * DEMO * ----------\n')
 	print('Text chiffré:\n')
-	message = mse_cipher(choice(example_phrases))
+	message = mse_cipher(choice(exemple_phrases))
 	print(message,'\n\n')
 
 	print('Texte déchiffré:\n')
