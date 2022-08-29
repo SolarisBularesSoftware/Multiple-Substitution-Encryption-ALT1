@@ -4,7 +4,7 @@ from MSE import mse_cipher,mse_decipher,__doc__
 #import sys
 from pyperclip import paste
 
-example_phrases = ['ceci est une longue phrase un peut chiante','meeting tonight for speak','rendez vous ce soir pour parler','hello world','on se voit ce soir','ou habitez vous','que faites vous','a bientot','a la semaine prochaine','je peux te parler','on peut se voir','jusqu ici tout va bien','mec tfk quoi la','alors la je fait expres de mettre une tres longue phrase pour des test','hallo zusammen heute','mec tfk quoi']
+exemple_phrases = ['Salut agent 789 !','ceci est une longue phrase un peut chiante','meeting tonight for speak','rendez vous ce soir pour parler','hello world','on se voit ce soir','ou habitez vous','que faites vous','a bientot','a la semaine prochaine','je peux te parler','on peut se voir','jusqu ici tout va bien','mec tfk quoi la','alors la je fait expres de mettre une tres longue phrase pour des test','hallo zusammen heute','mec tfk quoi']
 
 def demo():
 	print('---------- * DEMO * ----------\n')
