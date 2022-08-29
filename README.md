@@ -105,3 +105,4 @@ Tentez de casser l'algorithme avec le programme: [MARS ATTACK](https://discord.g
 
 Exemple visuelle de message codé: [result.vu](https://zpuf06s8huajolm3byvojg.on.drv.tw/public_html/MSE%20ARG/)
 
+Exemple de clé de chiffrement **(837 clés | 1,88 Mo)**: [keylib.keys](https://zpuf06s8huajolm3byvojg.on.drv.tw/public_html/MSE%20ARG/keylib.keys)
