@@ -83,7 +83,7 @@ Usage:
 		main.py RE
 
 
-## Astuces
+## Conseille et Astuces
 -------------------------------------------------------------------
 modifier,mélanger vos caractères spéciaux
 
