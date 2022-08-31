@@ -109,4 +109,6 @@ Exemple visuelle de message codé: [result.vu](https://zpuf06s8huajolm3byvojg.on
 
 Exemple de clé de chiffrement **(837 clés | 1,88 Mo)**: [keylib.keys](https://zpuf06s8huajolm3byvojg.on.drv.tw/public_html/MSE%20ARG/keylib.keys)
 
+mon twitter: [twitter](https://twitter.com/motionkerling)
+
 le monde merveilleux des secrets, des lettres et des chiffres !
