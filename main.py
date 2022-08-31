@@ -67,7 +67,7 @@ def main():
 #rebuild()
 #print(__doc__)
 
-#mse_cipher_file('result.txt',example_phrases)
+#mse_cipher_file('result.txt',exemple_phrases)
 #mse_decipher_file('result.txt')
 
 m = mse_cipher("Salut agent 789 !")
