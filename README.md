@@ -1,14 +1,5 @@
 ![image du projet](exemple/logo.png)
 
-
-	███╗   ███╗  ██████╗ ███████╗
-	████╗ ████║ ██╔════╝ ██╔════╝
-	██╔████╔██║ ╚█████╗  █████╗
-	██║╚██╔╝██║  ╚═══██╗ ██╔══╝
-	██║ ╚═╝ ██║ ██████╔╝ ███████╗
-	╚═╝     ╚═╝ ╚═════╝  ╚══════╝
-
-
 # MSE PROJECT
 -------------------------------------
 
@@ -48,6 +39,12 @@ pour but de créer des messages codés avec des phrases.
 ## Exemple
 ![Exemple](exemple/exemple.jpg)
 En bleu vous avez les caractères qui ont été substitués et en rouge les caractères qui ont été ajoutés **après** la substitution.
+
+
+## d'autre exemples
+![Exemple](exemple/ex2.PNG)
+![Exemple](exemple/ex3.PNG)
+![Exemple](exemple/ex4.PNG)
 
 
 ## REQUIS
@@ -105,7 +102,7 @@ ajouter, modifier des fonctions
 
 Tentez de casser l'algorithme avec le programme: [MARS ATTACK](https://discord.gg/E6qJmmKaEW)
 
-Exemple visuelle de message codé: [result.vu](https://zpuf06s8huajolm3byvojg.on.drv.tw/public_html/MSE%20ARG/)
+Exemple visuelle de message codé: [result.vu](https://zpuf06s8huajolm3byvojg.on.drv.tw/public_html/MSE%20VISUAL%20CODE/)
 
 Exemple de clé de chiffrement **(837 clés | 1,88 Mo)**: [keylib.keys](https://zpuf06s8huajolm3byvojg.on.drv.tw/public_html/MSE%20ARG/keylib.keys)
 
