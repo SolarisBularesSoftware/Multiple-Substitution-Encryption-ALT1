@@ -47,6 +47,10 @@ En bleu vous avez les caractères qui ont été substitués et en rouge les cara
 ![Exemple](exemple/ex4.PNG)
 
 
+## Exemple de clé de chiffrement
+![Exemple](exemple/ex_keys.PNG)
+
+
 ## REQUIS
 -------------------------------------
 Pour copier le message automatiquement vous devez installez le module [pyperclip](https://pypi.org/project/pyperclip/)
@@ -103,8 +107,6 @@ ajouter, modifier des fonctions
 Tentez de casser l'algorithme avec le programme: [MARS ATTACK](https://discord.gg/E6qJmmKaEW)
 
 Exemple visuelle de message codé: [result.vu](https://zpuf06s8huajolm3byvojg.on.drv.tw/public_html/MSE%20VISUAL%20CODE/)
-
-Exemple de clé de chiffrement **(837 clés | 1,88 Mo)**: [keylib.keys](https://zpuf06s8huajolm3byvojg.on.drv.tw/public_html/MSE%20VISUAL%20CODE/keylib.keys)
 
 mon twitter: [twitter](https://twitter.com/motionkerling)
 
