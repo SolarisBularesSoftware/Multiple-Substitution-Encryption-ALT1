@@ -58,7 +58,7 @@ def cipher(plain_text):
 	verifier_carac(plain_text)
 	
 	key = choice(listkey).split(' ')
-	key = [e.replace('\n','') for e in key]
+	key = [element.replace('\n','') for element in key]
 
 	for n in range(len_carac_sub):
 		plain_text = plain_text.replace(carac_sub[n],key[n])

@@ -5,7 +5,8 @@
 librairie de clé = keylib
 fichier qui contient plusieurs clé de chiffrement
 
-GENESIS KEY
+Reprend une partie du code source du logiciel GENESIS KEY © qui,
+dans une sombre époque du projet était un logiciel payant ;)
 """
 
 from random import randint,choice
@@ -24,11 +25,13 @@ def gen_caractere(x):
 
 def gen_cle(len_carac_sub):
 	"""
-	Génère les clés avec une longeur choisit
+	Génère une clé de substitution avec une longeur choisit
 
 	Exemple:
-		ID TUYSQ ZSQEOD UTT UZUFRYS RZ QEQQEQ
-		a	b	 c	 d	 e	f	g	h   i 
+
+		| ID | TUYSQ | ZEOD | UTT | UZU | FRYS | RZ | EWQ | PMZWK |
+		-----------------------------------------------------------
+		| a  | b     | c    | d	  | e	| f	   | g  | h   | i     |
 		
 	"""
 

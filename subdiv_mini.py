@@ -1,14 +1,21 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+
 """
 
-Je reprend une petite partie du code issu du projet: https://github.com/flowlord/subdiv8
+Je reprend une petite partie du code issu du projet:
+https://github.com/flowlord/subdiv8
 
 SUBDIV MINI
 -----------
 Principe et fonctionnement
 
-on divisele mot au milieu et met la première moitié à la fin
+on divise le mot au milieu et met la première moitié à la fin
 et si le nombre de lettres est impair,
 la dernière moitié du mot reçoit le caractère supplémentaire.
+
+C = Combinaision
 
 """
 
@@ -36,7 +43,6 @@ def C1_inv(t):
 
 
 
-
 def C2(t):
 	m = milieu(t)
 	start = t[:m]
@@ -48,7 +54,6 @@ def C2_inv(t):
 	start = t[m:]
 	end = t[:m]
 	return start+end
-
 
 
 def inverser_mot(word):
@@ -91,8 +96,4 @@ def inverser_phrase(msg):
 		code = code + inverser_mot(word) + ' '
 	
 	return code[:-1]
-
-
-
-
 

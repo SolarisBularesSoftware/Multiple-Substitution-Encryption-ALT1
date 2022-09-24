@@ -1,5 +1,14 @@
 ![image du projet](exemple/logo.png)
 
+
+	███╗   ███╗  ██████╗ ███████╗
+	████╗ ████║ ██╔════╝ ██╔════╝
+	██╔████╔██║ ╚█████╗  █████╗
+	██║╚██╔╝██║  ╚═══██╗ ██╔══╝
+	██║ ╚═╝ ██║ ██████╔╝ ███████╗
+	╚═╝     ╚═╝ ╚═════╝  ╚══════╝
+
+
 # MSE PROJECT
 -------------------------------------
 
@@ -12,7 +21,7 @@ Programme de chiffrement de text par substitution multiple,
 pour but de créer des messages codés avec des phrases.
 
 
-**Nom de version: CRC X [ MELINGRADE ]**
+**Nom de version: CRC XV [ OVERLORD ]**
 
 ## Comment sa fonctionne ?
 
@@ -39,16 +48,6 @@ pour but de créer des messages codés avec des phrases.
 ## Exemple
 ![Exemple](exemple/exemple.jpg)
 En bleu vous avez les caractères qui ont été substitués et en rouge les caractères qui ont été ajoutés **après** la substitution.
-
-
-## d'autre exemples
-![Exemple](exemple/ex2.PNG)
-![Exemple](exemple/ex3.PNG)
-![Exemple](exemple/ex4.PNG)
-
-
-## Exemple de clé de chiffrement
-![Exemple](exemple/ex_keys.PNG)
 
 
 ## REQUIS
@@ -97,6 +96,8 @@ modifier la liste des "caractères spéciaux"
 ajouter, modifier des fonctions
 
 
+
+
 **_la version que vous avez téléchargée ne dois pas ressembler au code source officielle_**
 
 
@@ -106,8 +107,8 @@ ajouter, modifier des fonctions
 
 Tentez de casser l'algorithme avec le programme: [MARS ATTACK](https://discord.gg/E6qJmmKaEW)
 
-Exemple visuelle de message codé: [result.vu](https://zpuf06s8huajolm3byvojg.on.drv.tw/public_html/MSE%20VISUAL%20CODE/)
+Exemple visuelle de message codé: [result.vu](https://zpuf06s8huajolm3byvojg.on.drv.tw/public_html/MSE%20ARG/)
 
-mon twitter: [twitter](https://twitter.com/motionkerling)
+Exemple de clé de chiffrement **(837 clés | 1,88 Mo)**: [keylib.keys](https://zpuf06s8huajolm3byvojg.on.drv.tw/public_html/MSE%20ARG/keylib.keys)
 
 le monde merveilleux des secrets, des lettres et des chiffres !

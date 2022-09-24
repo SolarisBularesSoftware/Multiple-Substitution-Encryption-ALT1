@@ -19,19 +19,11 @@ def reinitialiser():
 	shutil.rmtree('configs/__pycache__')
 
 
-def gen_mdp():
-	p = ""
-	char = ascii_letters+digits+punctuation
-	for c in range(randint(15,30)):
-		p = p + choice(char)
-	return p
-	
-
 def mixer():
 	"""
 	Mélange l'ordre des caractères
 	example:
-		AAAZZZ ---> | mixer(2) | ---> ZAAZAZ
+		AAAZZZ ---> | mixer | ---> ZAAZAZ
 	"""
 	reinitialiser()
 	
@@ -68,3 +60,5 @@ def rebuild():
 	
 	open(name,'w',encoding='utf-8').write(new_carac)
 	
+
+

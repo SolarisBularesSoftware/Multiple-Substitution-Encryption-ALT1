@@ -33,7 +33,7 @@
 """
 
 __author__  = "Motion Kerling"
-__version__ = "10.1.0"
+__version__ = "15.8.0"
 __date__    = "25 août 2022"
 
 __doc__ = """
@@ -60,9 +60,11 @@ Usage:
 
 from random import randint
 from pyperclip import copy
-from bloc_a import complexi,decomplex
+
+from bloc_a import complexifier,complexifier_inv
 from bloc_b import cipher,decipher
-from bloc_c import chaos,dechaos
+from bloc_c import ajout_carac_b,enleve_carac_b
+
 from configs.init import*
 
 
@@ -70,9 +72,9 @@ def mse_cipher(msg):
 	"""
 	|A| --> |B| --> |C|
 	"""
-	a  = complexi(msg)
+	a  = complexifier(msg)
 	b = cipher(a)
-	c = chaos(b,randint(mini,maxi))
+	c = ajout_carac_b(b,randint(mini,maxi))
 	
 	copy(c)
 	return c
@@ -82,9 +84,9 @@ def mse_decipher(msg):
 	"""
 	|C| --> |B| --> |A|
 	"""
-	c = dechaos(msg)
+	c = enleve_carac_b(msg)
 	b = decipher(c)
-	a = decomplex(b)
+	a = complexifier_inv(b)
 	
 	return a
 
@@ -108,7 +110,5 @@ def mse_decipher_file(filename):
 
 	for line in file:
 		print(mse_decipher(line))
-
-
 
 
