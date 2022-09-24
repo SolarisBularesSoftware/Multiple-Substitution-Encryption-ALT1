@@ -3,7 +3,7 @@
 
 
 """
-	II) Bloc C
+	III) Bloc C
 		Complexifie le code après la subtitution.
 """
 
