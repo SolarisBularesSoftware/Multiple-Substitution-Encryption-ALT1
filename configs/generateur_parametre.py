@@ -2,7 +2,8 @@ from random import choice, randint
 
 cip = ["ascii_lowercase","ascii_uppercase","ascii_letters"]
 
-lst_cara = ["all.carac",'asian.carac','emoji.carac','lang.carac','rand_carac.carac']
+lst_cara = ["all.carac",'asian.carac','emoji.carac',
+'lang.carac','rand_carac.carac']
 
 def gen(l,mi):
     """
@@ -34,3 +35,5 @@ def creat_():
     f.close()
 
 creat_()
+
+
