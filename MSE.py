@@ -33,30 +33,8 @@
 """
 
 __author__  = "Motion Kerling"
-__version__ = "15.8.0"
-__date__    = "25 août 2022"
-
-__doc__ = """
-Usage:
-	
-	1) Chiffrer et déchiffrer un message
-		-------------------------------------------->
-		main.py c "message"
-		main.py d (déchiffre un message qui est dans le presse papier)
-
-	2) Supprimer les clés
-		---------------------->
-		main.py R
-		
-	3) Mélanger les caractères spéciaux
-		---------------------->
-		main.py M
-	
-	4) Reconstruit le fichier de caractères spéciaux actuelle
-		---------------------->
-		main.py RE
-		
-"""
+__version__ = "15.9.0"
+__date__    = "25 septembre 2022"
 
 from random import randint
 from pyperclip import copy

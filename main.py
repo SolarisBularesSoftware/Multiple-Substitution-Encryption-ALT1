@@ -1,12 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
 from random import choice
 from pyperclip import paste
 
 from MSE import mse_cipher,mse_decipher
-from MSE import mse_cipher_file,mse_decipher_file,__doc__
+from MSE import mse_cipher_file,mse_decipher_file
 from tools import rebuild,reinitialiser,mixer
 
 
@@ -30,22 +29,28 @@ def demo():
 	print(mse_decipher(message))
 
 
-
+# Mélanger les caractères spéciaux ( avec le jeu de caractère actuelle)
 #mixer()
-#rebuild()
-#print(__doc__)
 
+# Reconstruit le jeu de caractère actuelle
+#rebuild()
+
+# Pour chiffrer plusieurs message et le mettre dans un fichier
 #mse_cipher_file('result.txt',exemple_phrases)
+
+# Pour déchiffrer plusieurs message dans un fichier
 #mse_decipher_file('result.txt')
 
+# Pour supprimer les clés de chiffrement
 #reinitialiser()
 
-"""
-m = mse_cipher("bonjour tous le monde")
-print(m)
+# chiffrer un message
+# m = mse_cipher("bonjour tous le monde")
+#print(m)
 
-print(mse_decipher(m))
-"""
+# déchiffrer
+#print(mse_decipher(m))
+
 demo()
 
 
