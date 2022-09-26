@@ -107,7 +107,7 @@ Usage:
 > ajouter, modifier des fonctions
 
 
-# ==Faille de sécurité détecté numéro **MSE-001**==
+# <span style="color:#ed6872">Faille de sécurité détecté numéro **MSE-001**</span>
 -------------------------------------------------------------------
 ## On peut identifier les caractères du groupe B, si l'utilisateur n'a pas mélanger ou modifier sont jeu de caractère
 ### AVANT de générérer vos clés de chiffrement, mélangez votre jeu de caractère actuelle, avec la fonction [mixer](https://github.com/flowlord/Multiple-Substitution-Encryption/blob/main/tools.py#L22)
