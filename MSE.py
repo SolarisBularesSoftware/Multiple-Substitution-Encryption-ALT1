@@ -34,7 +34,7 @@
 
 __author__  = "Motion Kerling"
 __version__ = "15.9.0"
-__date__    = "25 septembre 2022"
+__date__    = "26 septembre 2022"
 
 from random import randint
 from pyperclip import copy
