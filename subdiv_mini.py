@@ -3,10 +3,6 @@
 
 
 """
-
-Je reprend une petite partie du code issu du projet:
-https://github.com/flowlord/subdiv8
-
 SUBDIV MINI
 -----------
 Principe et fonctionnement
