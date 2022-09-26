@@ -12,103 +12,113 @@
 # MSE PROJECT
 -------------------------------------
 
-## MULTIPLE SUBSTITUTION ENCRYPTION
+# MULTIPLE SUBSTITUTION ENCRYPTION
 -------------------------------------
 
 Chiffrement par substitution multiple
 
-Programme de chiffrement de text par substitution multiple,
-pour but de créer des messages codés avec des phrases.
+Programme de chiffrement de text par substitution multiple en 3 étapes.
+
+pour but de créer des messages codés avec des messages.
 
 
 **Nom de version: CRC XV [ OVERLORD ]**
 
-## Comment sa fonctionne ?
-
-### Chiffrement en 3 étapes:
+# Comment sa fonctionne ?
 
 ### INPUT --> A --> B --> C --> output
     
     
-    0) Initiation
+    **Initiation**
         génération des clés de chiffrement
 --------------------------------------------------------------------------
 	
-    I) Bloc A
-        Le texte est modifié.
+    **I) Bloc A**
+        Une série de fonction modifie le texte entré.
 --------------------------------------------------------------------------
-    II) Bloc B
-        Une clé est choisie au hasard.
+    **II) Bloc B**
+        Une clé de chiffrement est choisie au hasard.
         Chaque caractère est substitué avec cette clé.
 --------------------------------------------------------------------------
-    II) Bloc C
+    **III) Bloc C**
         Ajoute des caractères dans le code après la substitution.
 
 
-## Exemple
+# Exemple
 ![Exemple](exemple/exemple.jpg)
 En bleu vous avez les caractères qui ont été substitués et en rouge les caractères qui ont été ajoutés **après** la substitution.
 
 
-## REQUIS
+# REQUIS
 -------------------------------------
 Pour copier le message automatiquement vous devez installez le module [pyperclip](https://pypi.org/project/pyperclip/)
 
 	pip install pyperclip
 
 
-## Attention
+# Attention
 -----------------------------------
 **Lorsque vous chiffrer votre premier message un fichier _keylib.keys_ va être généré ce sont vous clés de chiffrement gardez les à tous prix !**
 
-## Usage
+# Usage
 ---------------------------
 Usage:
 	
-	1) Chiffrer et déchiffrer un message
-		-------------------------------------------->
-		main.py c "message"
-		main.py d (déchiffre un message qui est dans le presse papier)
+	Mélanger les caractères spéciaux ( avec le jeu de caractère actuelle)
+		mixer()
 
-	2) Supprimer les clés
-		---------------------->
-		main.py R
-		
-	3) Mélanger les caractères spéciaux
-		---------------------->
-		main.py M
-	
-	4) Reconstruit le fichier de caractères spéciaux actuelle
-		---------------------->
-		main.py RE
+	Reconstruit le jeu de caractère actuelle
+		rebuild()
+
+	Pour chiffrer plusieurs message et le mettre dans un fichier:
+		mse_cipher_file('result.txt',exemple_phrases_list)
+
+	Pour déchiffrer plusieurs message dans un fichier:
+		mse_decipher_file('exemple.txt')
+
+	Pour supprimer les clés de chiffrement:
+		reinitialiser()
+
+	chiffrer un message:
+		mse_cipher(message)
+
+	déchiffrer:
+		mse_decipher(message)
+
+	demo:
+		demo()
 
 
-## Conseille et Astuces
+# Conseille et Astuces
 -------------------------------------------------------------------
-modifier,mélanger vos caractères spéciaux
 
-modifier les paramètres du programme dans configs/setting.json
+> Vous pouvez chiffrer autre chose que des lettres (minuscules ou majuscules) comme les ponctuations, accents et chiffres pour celà écrivez 'true' devant les carctères que vous voulez chiffrer,(_setting_.json)
 
-optez plûtot pour un language de type "sms" du genre: tu fait quoi  ---> tfk
+![setting file](exemple/example_setting.PNG)
 
-modifier la liste des "caractères spéciaux"
+> modifier,mélanger votre jeu de caractères
 
-ajouter, modifier des fonctions
+> modifier les paramètres du programme dans configs/setting.json
+
+> optez plûtot pour un language de type "sms" du genre: tu fait quoi ---> tfk
+
+> modifier la liste des ["caractères spéciaux"](https://github.com/flowlord/Multiple-Substitution-Encryption/blob/main/configs/init.py#L54)
+
+> ajouter, modifier des fonctions
 
 
-
-
-**_la version que vous avez téléchargée ne dois pas ressembler au code source officielle_**
-
+# ==Faille de sécurité détecté numéro **MSE-001**==
+-------------------------------------------------------------------
+## On peut identifier les caractères du groupe B, si l'utilisateur n'a pas mélanger ou modifier sont jeu de caractère
+### AVANT de générérer vos clés de chiffrement, mélangez votre jeu de caractère actuelle, avec la fonction [mixer](https://github.com/flowlord/Multiple-Substitution-Encryption/blob/main/tools.py#L22)
+**_la version que vous avez cloner ne dois pas ressembler au code source officielle_**
+Vous pouvez générer des paramètre aléatoires grâce à: [generateur_parametre.py](https://github.com/flowlord/Multiple-Substitution-Encryption/blob/main/configs/generateur_parametre.py)
+-------------------------------------------------------------------
 
 ## Ressources
 -------------------------------------------------------------------
 
-
-Tentez de casser l'algorithme avec le programme: [MARS ATTACK](https://discord.gg/E6qJmmKaEW)
-
-Exemple visuelle de message codé: [result.vu](https://zpuf06s8huajolm3byvojg.on.drv.tw/public_html/MSE%20ARG/)
-
-Exemple de clé de chiffrement **(837 clés | 1,88 Mo)**: [keylib.keys](https://zpuf06s8huajolm3byvojg.on.drv.tw/public_html/MSE%20ARG/keylib.keys)
+Exemples magnifiques de message codé: [result.vu](https://zpuf06s8huajolm3byvojg.on.drv.tw/public_html/MSE%20ARG/)
 
 le monde merveilleux des secrets, des lettres et des chiffres !
+
