@@ -118,7 +118,7 @@ Vous pouvez générer des paramètre aléatoires grâce à: [generateur_parametr
 ## Ressources
 -------------------------------------------------------------------
 
-Exemples magnifiques de message codé: [result.vu](https://zpuf06s8huajolm3byvojg.on.drv.tw/public_html/MSE%20ARG/)
+Exemples de code secret: [codex.vu](https://bit.ly/theclawsofgod)
 
 le monde merveilleux des secrets, des lettres et des chiffres !
 
