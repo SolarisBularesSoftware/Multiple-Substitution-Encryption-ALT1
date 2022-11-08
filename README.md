@@ -48,6 +48,10 @@ pour but de créer des messages codés avec des messages.
 ![Exemple](exemple/exemple.jpg)
 En bleu vous avez les caractères qui ont été substitués et en rouge les caractères qui ont été ajoutés **après** la substitution.
 
+![Exemple](exemple/0.PNG)
+![Exemple](exemple/1.PNG)
+![Exemple](exemple/2.PNG)
+
 
 # REQUIS
 -------------------------------------
