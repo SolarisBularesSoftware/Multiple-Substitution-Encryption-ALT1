@@ -18,11 +18,11 @@ def gen(l,mi):
         "cipher space": true,
         "cipher accent": {choice(["true","false"])},
         "cipher digits": {choice(["true","false"])},
-        "len_caractere": [{l},{randint(l+1,10)}],
+        "len_caractere": [{l},{randint(l+1,30)}],
         "len_carac_special": [3,{l-1}],
-        "nombre_cle": {randint(100,1500)},
+        "nombre_cle": [100,{randint(101,3000)}],
         "mini": {mi},
-        "maxi": {randint(mi+100,900)},
+        "maxi": {randint(mi+100,20001)},
         "confusion": {choice(["true","false"])}
     """
 
@@ -30,7 +30,7 @@ def gen(l,mi):
 
 
 def creat_():
-    f = open("setting.json", "w")
+    f = open("rand_"+ str(randint(1,9999)) +".json", "w")
     f.write(gen(5,100))
     f.close()
 
