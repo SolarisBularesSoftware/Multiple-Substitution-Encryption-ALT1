@@ -1,0 +1,18 @@
+{
+    "cipher": "ascii_letters",
+    "substitue with": "configs/all.carac",
+
+    "cipher punctuation": false,
+    "cipher space": true,
+    "cipher accent": false,
+    "cipher digits": true,
+
+    "len_caractere": [5,8],
+    "len_carac_special": [3,4],
+    "nombre_cle": [500,900],
+
+    "mini": 1000,
+    "maxi": 2000,
+    
+    "confusion": true
+}

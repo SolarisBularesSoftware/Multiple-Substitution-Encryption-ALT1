@@ -1,0 +1,18 @@
+{
+    "cipher": "ascii_letters",
+    "substitue with": "configs/emoji.carac",
+
+    "cipher punctuation": true,
+    "cipher space": true,
+    "cipher accent": true,
+    "cipher digits": true,
+
+    "len_caractere": [5,6],
+    "len_carac_special": [3,4],
+    "nombre_cle": [500,900],
+
+    "mini": 300,
+    "maxi": 900,
+    
+    "confusion": true
+}
