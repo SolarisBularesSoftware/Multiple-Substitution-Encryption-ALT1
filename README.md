@@ -1,3 +1,5 @@
+Stranger from Discord
+
 ![image du projet](exemple/logo.png)
 
 
