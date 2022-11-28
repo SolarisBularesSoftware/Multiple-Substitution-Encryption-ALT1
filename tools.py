@@ -6,6 +6,8 @@ from random import shuffle,choice,randint
 import shutil
 from string import ascii_letters,digits,punctuation
 from configs.init import name,carac_sub
+from configs.generateur_parametre import generer_para
+
 
 def reinitialiser():
 	"""
@@ -15,8 +17,11 @@ def reinitialiser():
 	if os.path.exists("keylib.keys"):
 		os.remove("keylib.keys")
 		
-	shutil.rmtree('__pycache__')
-	shutil.rmtree('configs/__pycache__')
+	try:
+		shutil.rmtree('__pycache__')
+		shutil.rmtree('configs/__pycache__')
+	except FileNotFoundError:
+		pass
 
 
 def mixer():
@@ -61,4 +66,9 @@ def rebuild():
 	open(name,'w',encoding='utf-8').write(new_carac)
 	
 
-
+def gen_version():
+	"""
+		Génère une autre version du programme
+	"""
+	generer_para()
+	mixer()
