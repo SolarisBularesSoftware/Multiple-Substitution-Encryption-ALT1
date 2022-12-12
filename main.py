@@ -7,6 +7,7 @@ from pyperclip import paste
 from MSE import mse_cipher,mse_decipher
 from MSE import mse_cipher_file,mse_decipher_file
 from tools import rebuild,reinitialiser,mixer
+import update
 
 
 exemple_phrases = ['salut agent','ceci est une longue phrase un peut chiante',
@@ -52,9 +53,6 @@ def demo():
 #print(mse_decipher(m))
 
 demo()
-
-
-
 
 
 

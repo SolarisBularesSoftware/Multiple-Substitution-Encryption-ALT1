@@ -32,9 +32,9 @@
 
 """
 
-__author__  = "Motion Kerling"
-__version__ = "15.9.0"
-__date__    = "26 septembre 2022"
+__author__  = "Motion Kerling & GLASSG0W"
+__version__ = "16.0.0"
+__date__    = "12 decembre 2022"
 
 from random import randint
 from pyperclip import copy
@@ -88,5 +88,7 @@ def mse_decipher_file(filename):
 
 	for line in file:
 		print(mse_decipher(line))
+
+
 
 

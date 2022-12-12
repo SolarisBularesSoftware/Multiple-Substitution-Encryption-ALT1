@@ -4,14 +4,13 @@
 import os
 from random import shuffle,choice,randint
 import shutil
-from string import ascii_letters,digits,punctuation
-from configs.init import name,carac_sub
-from configs.generateur_parametre import generer_para
+from configs.init import fichier_jeux_carac,carac_sub
+from configs.generateur_parametre import creat_
 
 
 def reinitialiser():
 	"""
-	Suprime vos clé de chiffrement !
+	Supprime vos clés de chiffrement !
 	"""
 	
 	if os.path.exists("keylib.keys"):
@@ -27,22 +26,18 @@ def reinitialiser():
 def mixer():
 	"""
 	Mélange l'ordre des caractères
-	example:
+	exemple:
 		AAAZZZ ---> | mixer | ---> ZAAZAZ
 	"""
 	reinitialiser()
 	
-	init = open(name,'r',encoding='utf-8').readlines()
-	init = "".join(init)
-	init = list(init)
+	old_data = list(open(fichier_jeux_carac,'r',encoding='utf-8').read())
 
-	shuffle(init)
+	shuffle(old_data)
 
-	res = "".join(init)
+	new_data = "".join(old_data)
 
-	f = open(name,'w',encoding='utf-8')
-	f.write(res)
-	f.close()
+	new_file = open(fichier_jeux_carac,'w',encoding='utf-8').write(new_data)
 
 
 def rebuild():
@@ -53,17 +48,17 @@ def rebuild():
 	"""
 	reinitialiser()
 	
-	old_carac = open(name,'r',encoding='utf-8').read()
+	old_carac = open(fichier_jeux_carac,'r',encoding='utf-8').read()
 	new_carac = []
 	
-	for e in old_carac:
-		if e not in carac_sub and e not in new_carac:
-			if e != "\n":
-				new_carac.append(e)
+	for c in old_carac:
+		if c not in carac_sub and c not in new_carac:
+			if c != "\n":
+				new_carac.append(c)
 	
 	new_carac = "".join(new_carac)
 	
-	open(name,'w',encoding='utf-8').write(new_carac)
+	open(fichier_jeux_carac,'w',encoding='utf-8').write(new_carac)
 	
 
 def gen_version():
@@ -72,3 +67,18 @@ def gen_version():
 	"""
 	generer_para()
 	mixer()
+
+
+def first_mixer():
+	"""
+	Mélange l'ordre des caractères, si
+	l'utilisateur utilise pour la première fois
+	le programme
+	"""
+
+	if not os.path.exists("user.data"):
+		mixer()
+		open("user.data","w").close()
+
+first_mixer()
+
