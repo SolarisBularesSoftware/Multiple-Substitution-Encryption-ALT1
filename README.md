@@ -24,7 +24,7 @@ Programme de chiffrement de text par substitution multiple en 3 étapes.
 pour but de créer des messages codés avec des messages.
 
 
-**Nom de version: CRC XV [ OVERLORD ]**
+**Nom de version: CRC XVI [ GLASSG0W ]**
 
 # Comment sa fonctionne ?
 
@@ -113,12 +113,6 @@ Usage:
 > ajouter, modifier des fonctions
 
 
-# <span style="color:#ed6872">Faille de sécurité détecté numéro **MSE-001**</span>
--------------------------------------------------------------------
-## On peut identifier les caractères du groupe B, si l'utilisateur n'a pas mélanger ou modifier sont jeu de caractère
-### AVANT de générérer vos clés de chiffrement, mélangez votre jeu de caractère actuelle, avec la fonction [mixer](https://github.com/flowlord/Multiple-Substitution-Encryption/blob/main/tools.py#L22)
-**_la version que vous avez cloner ne dois pas ressembler au code source officielle_**
-Vous pouvez générer des paramètre aléatoires grâce à: [generateur_parametre.py](https://github.com/flowlord/Multiple-Substitution-Encryption/blob/main/configs/generateur_parametre.py)
 -------------------------------------------------------------------
 
 ## Ressources
@@ -128,8 +122,4 @@ Exemples de code secret: [codex.vu](https://bit.ly/theclawsofgod)
 
 le monde merveilleux des secrets, des lettres et des chiffres !
 
-
-
-
-
-001114588862 - 33221 - 1444593247
+001114588862 - 33221 - 1444593247B
