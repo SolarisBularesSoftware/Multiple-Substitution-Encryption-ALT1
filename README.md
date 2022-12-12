@@ -12,7 +12,7 @@
 # MSE PROJECT
 -------------------------------------
 
-frok from: https://github.com/flowlord/Multiple-Substitution-Encryption
+fork from: https://github.com/flowlord/Multiple-Substitution-Encryption
 
 Version alternative n°001
 
