@@ -1,6 +1,8 @@
-url = "https://github.com/flowlord/Multiple-Substitution-Encryption/blob/main/README.md"
+url = "https://github.com/SolarisBularesSoftware/Multiple-Substitution-Encryption-ALT1/blob/main/README.md"
 
-version_actuelle = "001114588862 - 33221 - 1444593247B"
+
+
+version_actuelle = "002114588862 - 88221 - 1444593247X"
 
 import urllib.request
 

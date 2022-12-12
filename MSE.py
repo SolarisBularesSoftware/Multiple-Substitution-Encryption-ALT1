@@ -32,11 +32,11 @@
 
 """
 
-__author__  = "Motion Kerling & GLASSG0W"
-__version__ = "16.0.0"
+__author__  = "SSB"
+__version__ = "1.0.0"
 __date__    = "12 decembre 2022"
 
-from random import randint
+from random import randint,choice
 from pyperclip import copy
 
 from bloc_a import complexifier,complexifier_inv
@@ -53,9 +53,11 @@ def mse_cipher(msg):
 	a  = complexifier(msg)
 	b = cipher(a)
 	c = ajout_carac_b(b,randint(mini,maxi))
+	ca = ajout_carac_b(c,randint(mini,maxi))
+	cb = ajout_carac_b(ca,randint(mini,maxi))
 	
-	copy(c)
-	return c
+	copy(cb)
+	return cb
 
 
 def mse_decipher(msg):
@@ -90,5 +92,13 @@ def mse_decipher_file(filename):
 		print(mse_decipher(line))
 
 
+def gen_false_positive():
+	x = randint(100,900)
 
+	s = ""
+
+	for e in range(x):
+		s = s + choice(groupe_c)
+
+	copy(s)
 

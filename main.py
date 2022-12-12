@@ -52,8 +52,8 @@ def demo():
 # déchiffrer
 #print(mse_decipher(m))
 
+# Générer des faux positives
+# gen_false_positive()
+
 demo()
-
-
-
 
