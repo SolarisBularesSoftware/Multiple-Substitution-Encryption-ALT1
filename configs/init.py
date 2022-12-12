@@ -58,12 +58,12 @@ groupe_caracteres_initial = "".join(open(fichier_jeux_carac,'r',encoding='utf-8'
 milieu = int(len(groupe_caracteres_initial)/2)
 groupe_a = groupe_caracteres_initial[:milieu]
 groupe_b = groupe_caracteres_initial[milieu:]
+groupe_c = groupe_a+groupe_b
 
 carac_special = 'esantirulodcpxwv '
 
 if data['confusion'] == True:
-	groupe_b = groupe_b+carac_sub*randint(5,100)+carac_special*randint(5,50)
-
+	groupe_b = groupe_b+carac_sub*randint(5,300)+carac_special*randint(5,200)
 
 
 
